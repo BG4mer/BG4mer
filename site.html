@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BG4mer — Sites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bgCanvasSites" class="bg-canvas"></canvas>
+
+  <div id="page" class="page">
+    <nav class="nav neon-card">
+      <div class="brand">
+        <div class="logo">BG4</div>
+        <div class="brand-text">
+          <div class="name">BGamer</div>
+          <div class="sub">All projects & websites</div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <input id="searchSites" class="search" placeholder="Filter projects..." />
+        <button id="themeToggleSites" class="icon-btn" aria-label="toggle theme">🌙</button>
+        <a class="btn" href="index.html">Home</a>
+      </div>
+    </nav>
+
+    <main class="container reveal">
+      <div class="controls">
+        <div id="tags" class="tags"></div>
+        <div class="controls-right">
+          <button id="clearFilters" class="ghost">Clear</button>
+        </div>
+      </div>
+
+      <section id="sitesGrid" class="grid"></section>
+    </main>
+
+    <footer class="footer neon-card">
+      <div>BGamer — sites index</div>
+    </footer>
+  </div>
+
+  <div id="pageTransition" class="page-transition hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

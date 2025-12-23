@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BG4mer — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0b1020">
+</head>
+<body>
+  <!-- Particle canvas sits behind everything -->
+  <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+  <div id="page" class="page">
+    <nav class="nav neon-card">
+      <div class="brand">
+        <div class="logo">BG4</div>
+        <div class="brand-text">
+          <div class="name">BGamer</div>
+          <div class="sub">Creative projects & web experiments</div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <input id="search" class="search" placeholder="Search projects, repos, tags..." />
+        <button id="themeToggle" class="icon-btn" aria-label="toggle theme">🌙</button>
+        <a class="btn" href="sites.html">All Sites</a>
+      </div>
+    </nav>
+
+    <header class="hero neon-panel reveal">
+      <h1 class="hero-title">Neon Projects & Websites</h1>
+      <p class="hero-desc">A cyber-styled portfolio showcasing mods, web builds, and experimental projects.</p>
+      <div class="hero-actions">
+        <a class="cta" href="sites.html">Explore sites</a>
+        <a class="ghost" href="#features">Features</a>
+      </div>
+    </header>
+
+    <section id="features" class="features container">
+      <div class="feature-card reveal">
+        <h3>Animated background</h3>
+        <p>Particles, stars and subtle parallax that react to mouse movement and device motion.</p>
+      </div>
+      <div class="feature-card reveal">
+        <h3>GitHub auto-loader</h3>
+        <p>Public repos from your GitHub account appear automatically — shows homepage if set.</p>
+      </div>
+      <div class="feature-card reveal">
+        <h3>Neon / Cyber UI</h3>
+        <p>Glows, chromatic aberration accents, and Geometry Dash-inspired neon palette.</p>
+      </div>
+    </section>
+
+    <section class="preview container reveal">
+      <h2>Your Latest Projects</h2>
+      <div id="previewGrid" class="grid"></div>
+    </section>
+
+    <footer class="footer neon-card">
+      <div>Made with ⚡ by BG4mer</div>
+      <div class="small">Tip: edit the <code>GITHUB_USERNAME</code> value in script.js to auto-load your repos.</div>
+    </footer>
+  </div>
+
+  <div id="pageTransition" class="page-transition hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
